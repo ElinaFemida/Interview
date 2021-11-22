@@ -22,6 +22,13 @@ public class Main {
         for (Integer x : mll) {
             System.out.println(x);
         }
+
+        MyArrayList <Integer> mal = new MyArrayList<>();
+        mal.add(3);
+        mal.add(0,2);
+        System.out.println(mal);
+        mal.remove(1);
+        System.out.println(mal);
     }
 }
 
