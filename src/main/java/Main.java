@@ -1,14 +1,27 @@
-import Builder.Person;
+import java.util.Iterator;
 
 public class Main {
     public static void main(String[] args) {
-        Person newPerson = new Person.Builder()
-                .firstName("John")
-                .lastName("John")
-                .country("Canada")
-                .age(30)
-                .gender("M")
-                .build();
+        MyLinkedList<Integer> mll = new MyLinkedList<>();
+
+        mll.insertFirst(5);
+        mll.insertFirst(6);
+        mll.insertFirst(2);
+        mll.insertFirst(8);
+        System.out.println(mll);
+
+        mll.insertLast(77);
+        mll.insertLast(88);
+        System.out.println(mll);
+
+        Iterator<Integer> iterator = mll.iterator();
+        while (iterator.hasNext()) {
+            System.out.println(iterator.next());
+        }
+
+        for (Integer x : mll) {
+            System.out.println(x);
+        }
     }
 }
 
