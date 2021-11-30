@@ -179,7 +179,7 @@ SELECT I1.session_id,
 FROM intervals I1
          INNER JOIN intervals I2 ON I1.session_end_time > I2.session_time AND I1.session_time < I2.session_end_time AND
                                     I1.session_id < I2.session_id
-ORDER BY I1.session_time;;
+ORDER BY I1.session_time;
 
 TASK_2
 
