@@ -14,6 +14,7 @@ CREATE TABLE `cinema_database`.`sessions`
     `session_date` DATE NOT NULL,
     `film_id`      INT  NOT NULL,
     `session_time` TIME NOT NULL,
+    `session_end_time` TIME NOT NULL,
     `price`        INT  NOT NULL,
     PRIMARY KEY (`session_id`),
     UNIQUE INDEX `session_id_UNIQUE` (`session_id` ASC) VISIBLE
